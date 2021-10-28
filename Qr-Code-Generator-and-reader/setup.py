@@ -1,14 +1,17 @@
 from setuptools import setup, find_packages
 
+long_description = ""
+
 setup(
     name='QR_Code_Generator_and_Reader',
     version='1.0',
     author='Ruban Gino Singh',
     author_email='info@rubangino.in',
     description="Python Application to generate QR code with in one click.",
+    long_description=long_description,
     license="MIT",
     classifiers=[
-        "Development Status :: 4 - Beta", 
+        "Development Status :: 1 - Beta", 
         "Intented Audience :: Social Media managers and Online program managers",
         "Licence :: OSI Approved :: MIT Licence"
     ],
