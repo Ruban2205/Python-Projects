@@ -14,7 +14,7 @@ window = Tk()
 window.title("QR-Code Generator and Reader - Ruban Gino Singh")
 window.geometry("1350x750")
 window.resizable(False, False)
-window.iconbitmap("Imgs/qr-code.ico")
+window.iconbitmap("qr-code.ico")
 
 
 # Function to Show Information message
@@ -77,7 +77,7 @@ def saveQR():
                 pass
 
             # Below code to call applause-man.png to the canvas.
-            displayPNG = Image.open("Imgs/applause-man.png")
+            displayPNG = Image.open("applause-man.png")
             displayPNG = displayPNG.resize((271, 371))
             displayPNG = ImageTk.PhotoImage(displayPNG)
             displayImg = displayCanvas.create_image(185, 185, anchor=CENTER, image=displayPNG)
@@ -121,7 +121,7 @@ def clearQR():
     showInfo("Success!!", "Text Box and Display Box are Cleared!! \nClick Generate or Open for further Operations!!")
 
     # Canvas for Image
-    displayPNG = Image.open("Imgs/hi-man.png")
+    displayPNG = Image.open("hi-man.png")
     displayPNG = displayPNG.resize((369, 314))
     displayPNG = ImageTk.PhotoImage(displayPNG)
     displayImg = displayCanvas.create_image(185, 185, anchor=CENTER, image=displayPNG)   
@@ -166,14 +166,14 @@ clearBtn = Button(window, text="Clear", font=("Segoe UI", 14, "bold"), bg="#1A1A
 clearBtn.place(x=546, y=393, width=188, height=61)
 
 # Image Button 1
-Img1 = Image.open("Imgs/about.png")
+Img1 = Image.open("about.png")
 Img1 = Img1.resize((20, 20))
 aboutImg = ImageTk.PhotoImage(Img1)
 aboutBtn = Button(window, text="About", font=("Segoe UI", 12, "bold"), bg="#D3D3D3", fg="black", image=aboutImg, compound=LEFT, command=about)
 aboutBtn.place(x=274, y=650, width=135, height=60)
 
 # Image Button 2
-Img2 = Image.open("Imgs/website.png")
+Img2 = Image.open("website.png")
 Img2 = Img2.resize((20, 20))
 webImg = ImageTk.PhotoImage(Img2)
 webBtn = Button(window, text="Website", font=('Segoe UI', 12, 'bold'), bg="#D3D3D3", fg="black", image=webImg, compound=LEFT, command=website)
@@ -185,7 +185,7 @@ displayCanvas.place(x=880, y=190)
 
 
 # Canvas for Image
-displayPNG = Image.open("Imgs/hi-man.png")
+displayPNG = Image.open("hi-man.png")
 displayPNG = displayPNG.resize((369, 314))
 displayPNG = ImageTk.PhotoImage(displayPNG)
 displayCanvas.create_image(185, 185, anchor=CENTER, image=displayPNG)
