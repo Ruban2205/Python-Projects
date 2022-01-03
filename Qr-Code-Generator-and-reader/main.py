@@ -31,7 +31,7 @@ def showError(title, message):
 
 
 # Functions
-def generateQR(name="./display.png"):
+def generateQR(name="display.png"):
     global displayCanvas
     global displayImage
 
