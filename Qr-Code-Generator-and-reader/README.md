@@ -20,6 +20,7 @@ QR_Code_Generator_and_Reader is released under the MIT License. See LICENCE for 
 ## Contact 
 
 Website: [rubangino.in](https://rubangino.in/)
-Follow me on the social medias. 
+Follow me on the social medias.
+Appreciate me by downloading my projects :)
 
 Thanks for using my application. 
