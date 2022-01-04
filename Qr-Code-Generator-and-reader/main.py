@@ -12,8 +12,9 @@ print(cv2.getBuildInformation())
 # Creating a Window
 window = Tk()
 window.title("QR-Code Generator and Reader - Ruban Gino Singh")
-window.geometry("1350x750")
-window.resizable(False, False)
+window.geometry("1280x720")
+window.minsize(1280, 720)
+# window.resizable(False, False)
 window.iconbitmap("qr-code.ico")
 
 
@@ -137,13 +138,13 @@ def website():
 
 # Text - Label
 mainTitle = Label(window, text="QR-Code Generator and Reader", font=("Segoe UI", 30, 'bold'))
-mainTitle.place(x=424, y=60)
+mainTitle.place(x=400, y=50)
 
 generateText = Label(window, text="Generate", font=("Segoe UI", 30))
 generateText.place(x=102, y=173)
 
 footerText = Label(window, text="Developed by: www.rubangino.in", font=("Segoe UI", 20))
-footerText.place(x=469, y=663)
+footerText.place(x=469, y=650)
 
 # Generate Entry
 textEntry = Text(window, font=("Segoe UI", 14))
@@ -170,18 +171,18 @@ Img1 = Image.open("about.png")
 Img1 = Img1.resize((20, 20))
 aboutImg = ImageTk.PhotoImage(Img1)
 aboutBtn = Button(window, text="About", font=("Segoe UI", 12, "bold"), bg="#D3D3D3", fg="black", image=aboutImg, compound=LEFT, command=about)
-aboutBtn.place(x=274, y=650, width=135, height=60)
+aboutBtn.place(x=274, y=650, width=125, height=50)
 
 # Image Button 2
 Img2 = Image.open("website.png")
 Img2 = Img2.resize((20, 20))
 webImg = ImageTk.PhotoImage(Img2)
 webBtn = Button(window, text="Website", font=('Segoe UI', 12, 'bold'), bg="#D3D3D3", fg="black", image=webImg, compound=LEFT, command=website)
-webBtn.place(x=941, y=650, width=135, height=60)
+webBtn.place(x=941, y=650, width=125, height=50)
 
 # Canvas to Display the image
 displayCanvas = Canvas(window, width=370, height=370)
-displayCanvas.place(x=880, y=190)
+displayCanvas.place(x=825, y=200)
 
 
 # Canvas for Image
